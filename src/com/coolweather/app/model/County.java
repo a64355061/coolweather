@@ -1,15 +1,15 @@
 package com.coolweather.app.model;
 
 public class County {
-	private int id;
+	private int _id;
 	private String countyName;
 	private String countyCode;
 	private int cityId;
 	public int getId(){
-		return id;
+		return _id;
 	}
-	public void setId(int id){
-		this.id=id;
+	public void setId(int _id){
+		this._id=_id;
 		
 	}
 	public String getCountyName(){

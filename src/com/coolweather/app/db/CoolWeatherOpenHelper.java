@@ -12,20 +12,17 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
 		// TODO Auto-generated constructor stub
 	}
 
-	public static final String CREATE_PROVINCE="create table Province("
-			+"id interger primary key autoincrement,"
+	public static final String CREATE_PROVINCE="create table Province(_id integer primary key autoincrement,"
 			+"province_name text,"
-			+"province_code text)";
-	public static final String CREATE_CITY="create table City("
-			+"id interger primary key autoincrement,"
+			+"province_code text);";
+	public static final String CREATE_CITY="create table City(_id integer primary key autoincrement,"
 			+"city_name text,"
 			+"city_code text,"
-			+"province_id interger)";
-	public static final String CREATE_COUNTY="create table County("
-			+"id interger primary key autoincrement,"
+			+"province_id interger);";
+	public static final String CREATE_COUNTY="create table County(_id integer primary key autoincrement,"
 			+"county_name text,"
 			+"county_code text,"
-			+"city_id interger)";
+			+"city_id interger);";
 
 	
 	public void onCreate(SQLiteDatabase db) {

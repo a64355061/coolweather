@@ -1,14 +1,14 @@
 package com.coolweather.app.model;
 
-public class City {private int id;
+public class City {private int _id;
 private String cityName;
 private String cityCode;
 private int provinceId;
 public int getId(){
-	return id;
+	return _id;
 }
-public void setId(int id){
-	this.id=id;
+public void setId(int _id){
+	this._id=_id;
 	
 }
 public String getCityName(){
